@@ -15,7 +15,7 @@ pipeline {
      }
         }
     
-    stage('Dockerizing') {
+    stage('Build') {
         steps{
                 sh 'docker build --tag=python-app . '
          }
